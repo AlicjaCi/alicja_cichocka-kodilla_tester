@@ -8,5 +8,11 @@ public class MainExtended {
         double height = 1.68;
         char firstLetterOfSurname = 'C';
         boolean isKodillaStudent = true;
+        System.out.println(name);
+        System.out.println(surname);
+        System.out.println(age);
+        System.out.println(height);
+        System.out.println(firstLetterOfSurname);
+        System.out.println(isKodillaStudent);
     }
 }
