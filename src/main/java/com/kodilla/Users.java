@@ -1,12 +1,12 @@
 package com.kodilla;
 
-public class Application {
+public class Users {
 
     String name;
     double height;
     double age;
 
-    public Application(String name, double height, double age) {
+    public Users(String name, double height, double age) {
         this.name = name;
         this.height = height;
         this.age = age;
@@ -22,4 +22,10 @@ public class Application {
 
 
         }
+
+    public static void main(String[] args) {
+        Users user1 = new Users("Rafał", 1.85, 30);
+        user1.checkYearAndHeight();
+
+    }
 }
