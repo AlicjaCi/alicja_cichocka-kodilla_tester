@@ -1,0 +1,38 @@
+package com.kodilla.collections.interfaces;
+
+import java.util.Objects;
+
+public class Square implements Shape{
+    private double width;
+
+    @Override
+    public String toString() {
+        return "Square{" +
+                "width=" + width +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Square square)) return false;
+        return Double.compare(width, square.width) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(width);
+    }
+
+    public Square(double width) {
+        this.width = width;
+    }
+
+    public double getArea() {
+        return width * width;
+    }
+
+    public double getPerimeter() {
+        return 4 * width;
+    }
+}
