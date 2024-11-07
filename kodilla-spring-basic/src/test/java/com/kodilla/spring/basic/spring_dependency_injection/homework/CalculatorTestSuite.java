@@ -14,40 +14,32 @@ public class CalculatorTestSuite {
     public void shouldAddTwoNumbersAndDisplayResult() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic.spring_dependency_injection.homework");
         Calculator beanCalc = context.getBean(Calculator.class);
-        Display beanDisplay = context.getBean(Display.class);
         double value = beanCalc.add(2, 2);
-        double result = beanDisplay.display(value);
-        Assertions.assertEquals(4, result);
+        Assertions.assertEquals(4, value);
     }
 
     @Test
     public void shouldSubtractTwoNumbersAndDisplayResult() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic.spring_dependency_injection.homework");
         Calculator beanCalc = context.getBean(Calculator.class);
-        Display beanDisplay = context.getBean(Display.class);
         double value = beanCalc.subtract(2, 2);
-        double result = beanDisplay.display(value);
-        Assertions.assertEquals(0, result);
+        Assertions.assertEquals(0, value);
     }
 
     @Test
     public void shouldMultiplyTwoNumbersAndDisplayResult() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic.spring_dependency_injection.homework");
         Calculator beanCalc = context.getBean(Calculator.class);
-        Display beanDisplay = context.getBean(Display.class);
         double value = beanCalc.multiply(2, 2);
-        double result = beanDisplay.display(value);
-        Assertions.assertEquals(4, result);
+        Assertions.assertEquals(4, value);
     }
 
     @Test
     public void shouldDivideTwoNumbersAndDisplayResult() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic.spring_dependency_injection.homework");
         Calculator beanCalc = context.getBean(Calculator.class);
-        Display beanDisplay = context.getBean(Display.class);
         double value = beanCalc.divide(2, 2);
-        double result = beanDisplay.display(value);
-        Assertions.assertEquals(1, result);
+        Assertions.assertEquals(1, value);
     }
 
 
