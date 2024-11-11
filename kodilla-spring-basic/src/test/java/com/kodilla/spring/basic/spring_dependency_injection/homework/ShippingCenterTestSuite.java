@@ -20,7 +20,7 @@ public class ShippingCenterTestSuite {
     public void shouldReturnFalseIfFail() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic.spring_dependency_injection.homework");
         DeliveryService beanDelivery = context.getBean(DeliveryService.class);
-        boolean message = beanDelivery.deliverPackage("Warsaw", 25.5);
+        boolean message = beanDelivery.deliverPackage("Warsaw", 35.5);
         Assertions.assertFalse(message);
     }
 
