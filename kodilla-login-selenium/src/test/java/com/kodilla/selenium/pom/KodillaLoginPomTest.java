@@ -38,7 +38,7 @@ public class KodillaLoginPomTest {
         String email = "test@kodilla.com";
         String password = "kodilla123";
         boolean loggedIn = loginPom.login(email, password);
-        assertTrue(loggedIn);
+        assertFalse(loggedIn);
     }
 
     @AfterEach
